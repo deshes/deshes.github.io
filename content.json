@@ -1,0 +1,1 @@
+[{"title":"Hexo 操作语句","date":"2016-12-31T08:15:54.329Z","path":"2016/12/31/hello-world/","text":"欢迎来到 邓大哥的个人站 ,我将hexo生成时自带的命令文件翻译了一下,作为我在2016年的第一篇博文,哈哈 快速启动创建一片新的博文1$ hexo new \"My New Post\" 详见: Writing 启动服务器1$ hexo server 详见: Server 生成静态资源文件1$ hexo generate 详见: Generating 部署到远程地址1$ hexo deploy 详见: Deployment","tags":[]}]
