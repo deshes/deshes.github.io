@@ -151,6 +151,166 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-一小时做一个基于HEXO的个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/15/一小时做一个基于HEXO的个人博客/">一小时做一个基于HEXO的个人博客</a>
+    </h1>
+  
+
+        <a href="/2017/01/15/一小时做一个基于HEXO的个人博客/" class="archive-article-date">
+  	<time datetime="2017-01-15T09:36:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-15</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> <img src="/source/img/2.png" alt="image"></p>
+<p>#1.安装必备的软件</p>
+<ol>
+<li>Node.js</li>
+<li>Git<br>#2.建立一个Github仓库</li>
+<li>注册登入Github并且验证邮箱地址</li>
+<li>进入<a href="https://github.com/new" target="_blank" rel="external">https://github.com/new</a> 新建仓库</li>
+<li>建立仓库时所填写的地址内容！是 (你的帐号).github.io （这是因为github规定的格式这样才会直接讲当前仓库作为托管站点）</li>
+<li>选择主题 并到(你的帐号).github.io 这个地址预览  用来检测Github pages是否新建成功 HEXO对格式要求很严格<br>#3.安装HEXO插件与git操作</li>
+<li>打开cmd命令行输入命令 npm install hexo-cli -g</li>
+<li>创建本地文件夹 文件夹避免含有中文字符 使用命令行进入文件夹</li>
+<li>依次执行下面四个命令  由于系统配置网络环境等因素  这几步极其容易出错  错误也千奇百怪 碰到问题或者问我 或者百度<blockquote>
+<p>$ hexo init<br>$ npm install<br>$ hexo g<br>$ hexo s</p>
+</blockquote>
+</li>
+<li><p>打开浏览器访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#配置SSH 部署到远程github服务器</div></pre></td></tr></table></figure>
+</li>
+<li><p>在Git Bash输入以下指令（任意位置点击鼠标右键），检查是否已经存在了SSH keys。</p>
+<blockquote>
+<p>ls -al ~/.ssh</p>
+</blockquote>
+</li>
+<li>如果不存在就没有关系，如果存在的话，直接删除.ssh文件夹里面所有文件<blockquote>
+<p>ssh-keygen -t rsa -C xxxxx@163.com(你自己的邮箱) 然后它会提示要你输入passphrase(可以不填)<br>ssh-agent –s<br>ssh-add ~/.ssh/id_rsa</p>
+</blockquote>
+</li>
+<li>出错了的话，就输入以下指令：eval <code>ssh-agent -s</code> ssh-add</li>
+<li>github中添加ssh    添加完成测试ssh -T git@github.com<blockquote>
+<p>hexo d 部署到服务器<br>#个性域名和个性化设置<br><img src="/source/img/1.png" alt="image"><br>通过 git clone能够下载github中由其他开发者制作的优秀主题 在配置文件中的theme属性修改主题</p>
+</blockquote>
+</li>
+</ol>
+<p>在source文件夹中创建CNAME文件输入你的域名<br>在hexo –g hexo –d 部署github会自动识别你的个性域名</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list">
+			 
+        <li class="article-tag-list-item">
+        	<a href="javascript:void(0)" class="article-tag-list-link color4">一小时</a>
+        </li>
+       
+        <li class="article-tag-list-item">
+        	<a href="javascript:void(0)" class="article-tag-list-link color3">技术</a>
+        </li>
+      
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/01/15/一小时做一个基于HEXO的个人博客/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-一小时做一个基于Vue的天气查询功能" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/15/一小时做一个基于Vue的天气查询功能/">一小时做一个基于Vue的天气查询功能</a>
+    </h1>
+  
+
+        <a href="/2017/01/15/一小时做一个基于Vue的天气查询功能/" class="archive-article-date">
+  	<time datetime="2017-01-15T09:32:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-15</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list">
+			 
+        <li class="article-tag-list-item">
+        	<a href="javascript:void(0)" class="article-tag-list-link color4">一小时</a>
+        </li>
+       
+        <li class="article-tag-list-item">
+        	<a href="javascript:void(0)" class="article-tag-list-link color3">技术</a>
+        </li>
+      
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/01/15/一小时做一个基于Vue的天气查询功能/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-我为什么不去英国读研" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -246,7 +406,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>欢迎来到 <a href="https://hexo.io/" target="_blank" rel="external">我的</a>的个人站<br>我将hexo生成时自带的命令文件翻译了一下,作为我在2016年的第一篇博文也是最后一篇博文了,哈哈<br>今天想在2016年最后一天做点有意义的事情,于是查阅了无数资料终于把博客部署到github了,也算完成了一个小目标<br>有空分享一下所有的步骤</p>
+        <p>欢迎来到我的个人站<br>我将hexo生成时自带的命令文件翻译了一下,作为我在2016年的第一篇博文也是最后一篇博文了,哈哈<br>今天想在2016年最后一天做点有意义的事情,于是查阅了无数资料终于把博客部署到github了,也算完成了一个小目标<br>有空分享一下所有的步骤</p>
 <p> <img src="http://www.gx.xinhuanet.com/2014-12/25/1113765421_14194137395141n.jpg" alt="image"></p>
 <h2 id="快速启动"><a href="#快速启动" class="headerlink" title="快速启动"></a>快速启动</h2><h3 id="创建一片新的博文"><a href="#创建一片新的博文" class="headerlink" title="创建一片新的博文"></a>创建一片新的博文</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>详见: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -426,6 +586,18 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="color2">一小时'技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="color4">一小时</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="color3">技术</a>
               </li>
             
             <div class="clearfix"></div>
