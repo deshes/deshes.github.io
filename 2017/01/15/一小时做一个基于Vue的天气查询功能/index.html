@@ -6,18 +6,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://deshes.github.io">
-  <title>一小时做一个基于Vue的天气查询功能 | 邓沁的个人小站</title>
+  <title>一个基于Vue以及element-ui的天气查询网站 | 邓沁的个人小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="分享点滴进步">
+  <meta name="description" content="Vue简洁的语法和组件化开发方式极大的提高了前端开发的工作效率
+花了一些空余时间做了一个vue-weather的demo与大家分享  这是github源码地址github.com/deshes/vue-weather
+觉得不错的请star ^_^
+demo基于element前端框架  由ele的前端团队开发 风格也比较简约大方 也是基于vue的组件式开发的
+直接调用ele框架自带的组建就可以极其方">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一小时做一个基于Vue的天气查询功能">
+<meta property="og:title" content="一个基于Vue以及element-ui的天气查询网站">
 <meta property="og:url" content="https://deshes.github.io/2017/01/15/一小时做一个基于Vue的天气查询功能/index.html">
 <meta property="og:site_name" content="邓沁的个人小站">
-<meta property="og:description" content="分享点滴进步">
-<meta property="og:updated_time" content="2017-01-15T10:29:21.919Z">
+<meta property="og:description" content="Vue简洁的语法和组件化开发方式极大的提高了前端开发的工作效率
+花了一些空余时间做了一个vue-weather的demo与大家分享  这是github源码地址github.com/deshes/vue-weather
+觉得不错的请star ^_^
+demo基于element前端框架  由ele的前端团队开发 风格也比较简约大方 也是基于vue的组件式开发的
+直接调用ele框架自带的组建就可以极其方">
+<meta property="og:updated_time" content="2017-01-22T02:46:40.638Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一小时做一个基于Vue的天气查询功能">
-<meta name="twitter:description" content="分享点滴进步">
+<meta name="twitter:title" content="一个基于Vue以及element-ui的天气查询网站">
+<meta name="twitter:description" content="Vue简洁的语法和组件化开发方式极大的提高了前端开发的工作效率
+花了一些空余时间做了一个vue-weather的demo与大家分享  这是github源码地址github.com/deshes/vue-weather
+觉得不错的请star ^_^
+demo基于element前端框架  由ele的前端团队开发 风格也比较简约大方 也是基于vue的组件式开发的
+直接调用ele框架自带的组建就可以极其方">
   
     <link rel="alternative" href="/atom.xml" title="邓沁的个人小站" type="application/atom+xml">
   
@@ -158,7 +170,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      一小时做一个基于Vue的天气查询功能
+      一个基于Vue以及element-ui的天气查询网站
     </h1>
   
 
@@ -169,7 +181,38 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>Vue简洁的语法和组件化开发方式极大的提高了前端开发的工作效率</p>
+<p>花了一些空余时间做了一个vue-weather的demo与大家分享  这是github源码地址github.com/deshes/vue-weather</p>
+<p>觉得不错的请star ^_^</p>
+<p>demo基于element前端框架  由ele的前端团队开发 风格也比较简约大方 也是基于vue的组件式开发的</p>
+<p>直接调用ele框架自带的组建就可以极其方便的构建页面的布局</p>
+<p>下边 就是页面代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"> &lt;template&gt;</div><div class="line"> &lt;div class=&quot;hello&quot;&gt;</div><div class="line"> &lt;h1&gt;&#123;&#123; msg &#125;&#125;&lt;/h1&gt;</div><div class="line"> &lt;el-col :span=&quot;24&quot; class=&quot;toolbar&quot;&gt;</div><div class="line"> &lt;el-form :inline=&quot;true&quot;&gt;</div><div class="line"> &lt;el-form-item&gt;</div><div class="line">      &lt;el-input placeholder=&quot;请输入城市名称&quot; v-model=&quot;input2&quot; @keyup.enter=&quot;greet&quot;&gt;&lt;/el-input&gt;</div><div class="line">    &lt;/el-form-item&gt;</div><div class="line">    &lt;el-form-item&gt;</div><div class="line">      &lt;el-button @click=&quot;greet&quot; &gt;查询&lt;/el-button&gt;</div><div class="line">    &lt;/el-form-item&gt;</div><div class="line">  &lt;/el-form&gt;</div><div class="line">&lt;/el-col&gt;</div><div class="line">&lt;el-col :span=&quot;24&quot; v-if=&quot;show&quot;&gt;</div><div class="line">  &lt;el-button type=&quot;primary&quot;&gt;&#123;&#123;city&#125;&#125;&lt;/el-button&gt;</div><div class="line">        &lt;el-button type=&quot;primary&quot;&gt;&#123;&#123;country&#125;&#125;&lt;/el-button&gt;</div><div class="line">&lt;/el-col&gt;</div><div class="line">&lt;el-col :span=&quot;24&quot; v-if=&quot;show&quot;&gt;</div><div class="line">  &lt;el-table</div><div class="line">    :data=&quot;gridData&quot;</div><div class="line">    stripe</div><div class="line">    fit</div><div class="line">    style=&quot;width: 80% ;text-align: center;&quot;&gt;</div><div class="line">    &lt;el-table-column</div><div class="line">      align=&quot;center&quot;</div><div class="line">      prop=&quot;date&quot;</div><div class="line">      label=&quot;日期&quot;&gt;</div><div class="line">    &lt;/el-table-column&gt;</div><div class="line">    &lt;el-table-column</div><div class="line">      align=&quot;center&quot;</div><div class="line">      prop=&quot;cond.txt_d&quot;</div><div class="line">      label=&quot;天气&quot;&gt;</div><div class="line">    &lt;/el-table-column&gt;</div><div class="line">    &lt;el-table-column</div><div class="line">      align=&quot;center&quot;</div><div class="line">      prop=&quot;tmp.max&quot;</div><div class="line">      label=&quot;日间温度&quot;&gt;</div><div class="line">    &lt;/el-table-column&gt;</div><div class="line">    &lt;el-table-column</div><div class="line">      align=&quot;center&quot;</div><div class="line">      prop=&quot;tmp.min&quot;</div><div class="line">      label=&quot;夜间温度&quot;&gt;</div><div class="line">    &lt;/el-table-column&gt;</div><div class="line">    &lt;el-table-column</div><div class="line">      align=&quot;center&quot;</div><div class="line">      prop=&quot;pres&quot;</div><div class="line">      label=&quot;气压值&quot;&gt;</div><div class="line">    &lt;/el-table-column&gt;</div><div class="line">    &lt;!--&lt;el-table-column</div><div class="line">      align=&quot;center&quot;</div><div class="line">      prop=&quot;weather.icon&quot;</div><div class="line">      label=&quot;天气情况&quot;&gt;</div><div class="line">      &lt;template scope=&quot;scope&quot;&gt;</div><div class="line">          &lt;img :src=&quot;scope.row.weather.icon&quot; /&gt;</div><div class="line">      &lt;/template&gt;</div><div class="line">    &lt;/el-table-column&gt;--&gt;</div><div class="line">  &lt;/el-table&gt;</div><div class="line">&lt;/el-col&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;/template&gt;</div></pre></td></tr></table></figure></p>
+<p>element-ui table中的data属性只要绑定数据源就可以通过props自动循环</p>
+<p>当然在使用element-ui前 我们需要在npm中 安装element-ui至本地 cnpm i element-ui –save</p>
+<p>同时在main.js全局引入element-ui中的css文件</p>
+<pre><code>import Vue from &apos;vue&apos;
+import ElementUI from &apos;element-ui&apos;
+import &apos;element-ui/lib/theme-default/index.css&apos;
+import App from &apos;./App&apos;
+import Vueresource from &apos;vue-resource&apos;
+Vue.use(ElementUI)
+Vue.use(Vueresource)
+/* eslint-disable no-new */
+new Vue({
+el: &apos;#app&apos;,
+template: &apos;&lt;App/&gt;&apos;,
+components: { App }
+})
+</code></pre><p>搭建好页面结构后  我们通过vue-resource引入数据源 ,这里的数据源来自和风天气  和风天气免费版提供三天国内城市的天气api  </p>
+<pre><code>this.$http.get(`https://free-api.heweather.com/x3/weather?city=${this.input2}&amp;key=2723a31a831b4d82aba437c1de05ac95`)
+                    .then((response) =&gt; {
+      this.gridData=response.data[&apos;HeWeather data service 3.0&apos;][0].daily_forecast;
+</code></pre><p>通过上面三行代码就能获取数据源到本地,Vue-resource简化了ajax的语法同时也支持jsonp 搭配vue使用很不错</p>
+<p>最后把数据通过data() return 给页面 整个页面就完成了  十分简单 </p>
+<p>这里能感受到element-ui上手十分简单,国内一线大厂的前端团队果然牛逼 哈哈</p>
+<p>有机会去面试一下~~~</p>
+<p>大家小年快乐!</p>
+
       
 
       
@@ -301,7 +344,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="一小时做一个基于Vue的天气查询功能" data-title="一小时做一个基于Vue的天气查询功能" data-url="https://deshes.github.io/2017/01/15/一小时做一个基于Vue的天气查询功能/"></div>
+	<div class="ds-thread" data-thread-key="一小时做一个基于Vue的天气查询功能" data-title="一个基于Vue以及element-ui的天气查询网站" data-url="https://deshes.github.io/2017/01/15/一小时做一个基于Vue的天气查询功能/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
